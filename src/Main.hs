@@ -29,6 +29,8 @@ main = do
   lastly we will use the construct tuple 
   in this case xs head on ["it","it"] is the same as getting "it" the first item. and save it on the tuple ("it"), next we will find the length of the list ["it", "it"] = 2 and add it to the tuple giving us ("it",2)
 
+
+
 -}
 
 clean = filter(\x -> isLetter x || x == ' ') . map toLower
@@ -42,4 +44,6 @@ wordFrequencies s =
     let cleaned = clean s
         groupedWords = groupAndSort cleaned
     in constructTuple groupedWords
+
+
 
